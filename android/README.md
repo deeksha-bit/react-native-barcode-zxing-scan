@@ -1,14 +1,66 @@
-README
-======
+# react-native-barcode-zxing-scan
 
-If you want to publish the lib as a maven dependency, follow these steps before publishing a new version to npm:
+The zxing module scanning barcodes in android.
 
-1. Be sure to have the Android [SDK](https://developer.android.com/studio/index.html) and [NDK](https://developer.android.com/ndk/guides/index.html) installed
-2. Be sure to have a `local.properties` file in this folder that points to the Android SDK and NDK
+This module abstracts the library zxing-android-embedded, developed by JourneyApps.
+
+## Barcode formats:
+
+- CODE 128
+- UPC A
+- UPC E
+- EAN 8
+- EAN 13
+- RSS 14
+- CODE 39
+- CODE 93
+- ITF
+- RSS EXPANDED
+- QR CODE
+- DATA MATRIX
+- PDF 417
+
+
+## Getting started
+
+```$ npm install react-native-barcode-zxing-scan --save```
+
+## Mostly automatic installation
+
+```$ react-native link react-native-barcode-zxing-scan```
+
+## Manual installation 
+
+Android
+Update rn to 0.60.* and use autolink
+
+## Usage 
+
+#### App.js 
+
+```import React from "react";
+import { Text, View } from "react-native";
+import BarcodeZxingScan from "react-native-barcode-zxing-scan";
+
+const App = () => {
+
+ const handleClick = () => {
+    BarcodeZxingScan.showQrReader(barcodescanned);
+  };
+
+  return (
+      <View>
+      <TouchableOpacity
+        onPress={() => handleClick()}
+        style={{
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <Text>SCAN</Text>
+      </TouchableOpacity>
+    </View>
+  );
+};
+
 ```
-ndk.dir=/Users/{username}/Library/Android/sdk/ndk-bundle
-sdk.dir=/Users/{username}/Library/Android/sdk
-```
-3. Delete the `maven` folder
-4. Run `./gradlew installArchives`
-5. Verify that latest set of generated files is in the maven folder with the correct version number
