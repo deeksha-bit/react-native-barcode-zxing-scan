@@ -1,14 +1,13 @@
 {
   "name": "react-native-barcode-zxing-scan",
   "title": "React Native Barcode Zxing Scan",
-  "version": "1.0.0",
-  "description": "TODO",
+  "version": "1.0.1",
+  "description": "libary for barcode scanning using zxing",
   "main": "index.js",
   "files": [
     "README.md",
     "android",
-    "index.js",
-    "react-native-barcode-zxing-scan.podspec"
+    "index.js"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,7 +18,12 @@
     "baseUrl": "https://github.com/deeksha-bit/react-native-barcode-zxing-scan"
   },
   "keywords": [
-    "react-native"
+     "scan",
+    "barcode",
+    "android",
+    "react-native",
+    "zxing",
+    "barcode-scan"
   ],
   "author": {
     "name": "Deeksha Mehta",
