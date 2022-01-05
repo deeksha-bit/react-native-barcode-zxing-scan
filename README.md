@@ -38,33 +38,36 @@ Update rn to 0.60.* and use autolink
 
 #### App.js 
 
-```import React from "react";
-import { Text, View } from "react-native";
+```
+import React from "react";
+import { Text, View, TouchableOpacity } from "react-native";
 import BarcodeZxingScan from "react-native-barcode-zxing-scan";
 
 const App = () => {
-
- const barcodeScanned = (data) => {
+  const barcodeScanned = (data) => {
     console.log("Barcode ", data);
   };
 
- const handleClick = () => {
+  const handleClick = () => {
     BarcodeZxingScan.showQrReader(barcodeScanned);
   };
 
   return (
-      <View>
+    <View>
       <TouchableOpacity
         onPress={() => handleClick()}
         style={{
+          margin: 20,
+          backgroundColor: "blue",
           justifyContent: "center",
           alignItems: "center",
         }}
       >
-        <Text>SCAN</Text>
+        <Text style={{ fontSize: 30 }}>SCAN</Text>
       </TouchableOpacity>
     </View>
   );
 };
 
+export default App;
 ```
