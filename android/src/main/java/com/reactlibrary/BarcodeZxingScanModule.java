@@ -44,7 +44,7 @@ public class BarcodeZxingScanModule extends ReactContextBaseJavaModule implement
         Callback mCallback = callback;
         IntentIntegrator integrator = new IntentIntegrator(getCurrentActivity());
         integrator.setOrientationLocked(true);
-        //  integrator.setCaptureActivity(ContinuousCaptureActivity.class);
+        integrator.setCaptureActivity(ContinuousCaptureActivity.class);
         integrator.initiateScan();
         reactContext.addActivityEventListener(this);
     }
