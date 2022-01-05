@@ -44,8 +44,12 @@ import BarcodeZxingScan from "react-native-barcode-zxing-scan";
 
 const App = () => {
 
+ const barcodeScanned = (data) => {
+    console.log("Barcode ", data);
+  };
+
  const handleClick = () => {
-    BarcodeZxingScan.showQrReader(barcodescanned);
+    BarcodeZxingScan.showQrReader(barcodeScanned);
   };
 
   return (
