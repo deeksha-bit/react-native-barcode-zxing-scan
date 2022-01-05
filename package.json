@@ -8,7 +8,6 @@
     "README.md",
     "android",
     "index.js",
-    "ios",
     "react-native-barcode-zxing-scan.podspec"
   ],
   "scripts": {
@@ -16,15 +15,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/github_account/react-native-barcode-zxing-scan.git",
-    "baseUrl": "https://github.com/github_account/react-native-barcode-zxing-scan"
+    "url": "git+https://github.com/deeksha-bit/react-native-barcode-zxing-scan.git",
+    "baseUrl": "https://github.com/deeksha-bit/react-native-barcode-zxing-scan"
   },
   "keywords": [
     "react-native"
   ],
   "author": {
-    "name": "Your Name",
-    "email": "yourname@email.com"
+    "name": "Deeksha Mehta",
+    "email": "deekshamehta125@gmail.com"
   },
   "license": "MIT",
   "licenseFilename": "LICENSE",
